@@ -9,6 +9,8 @@ import {
 } from "react-native";
 import { colors, fonts } from "../theme";
 
+//Screen confirmant la réservation d'un don
+
 export default function ConfResaScreen({ route, navigation }) {
   const { additionnalData } = route.params;
 

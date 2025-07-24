@@ -15,7 +15,9 @@ import { useDispatch } from "react-redux";
 import { login } from "../reducers/user";
 import { colors, fonts } from "../theme";
 import Feather from "react-native-vector-icons/Feather";
-const adresseServeur = "http://172.20.10.2:3000";
+const adresseServeur = process.env.EXPO_PUBLIC_SERVER;
+
+//Screen de connexion de l'utilisateur
 
 export default function LoginScreen({ navigation }) {
   const dispatch = useDispatch();

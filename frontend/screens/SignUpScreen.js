@@ -15,7 +15,9 @@ import { useState } from "react";
 import { colors, fonts } from "../theme";
 import Feather from "react-native-vector-icons/Feather";
 
-const adresseServeur = "http://172.20.10.2:3000";
+const adresseServeur = process.env.EXPO_PUBLIC_SERVER;
+
+//Screen d'inscription de l'utilisateur
 
 export default function SignUpScreen({ navigation }) {
   const [email, setEmail] = useState("");

@@ -11,7 +11,9 @@ import {
 } from "react-native";
 import Feather from "react-native-vector-icons/Feather";
 import { colors, fonts } from "../theme";
-const adresseServeur = "http://172.20.10.2:3000";
+const adresseServeur = process.env.EXPO_PUBLIC_SERVER;
+
+//Screen permettant d'afficher l'ensemble des informations d'un don
 
 export default function DonationScreen({ route, navigation }) {
   const { id } = route.params;

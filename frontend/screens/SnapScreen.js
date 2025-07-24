@@ -13,6 +13,8 @@ import Feather from "react-native-vector-icons/Feather";
 import { useIsFocused } from "@react-navigation/native";
 import { colors, fonts } from "../theme";
 
+//Screen qui permet de prendre en photo un don lors de la création d'une annonce de don
+
 export default function SnapScreen({ navigation }) {
   const dispatch = useDispatch();
   const isFocused = useIsFocused();

@@ -20,7 +20,9 @@ import {
 } from "react-native-autocomplete-dropdown";
 import { colors, fonts } from "../theme";
 import Feather from "react-native-vector-icons/Feather";
-const adresseServeur = "http://172.20.10.2:3000";
+const adresseServeur = process.env.EXPO_PUBLIC_SERVER;
+
+//Screen permettant à un utilisateur de modifier ses informations perso
 
 export default function EditProfileScreen({ navigation }) {
   const user = useSelector((state) => state.user.value);

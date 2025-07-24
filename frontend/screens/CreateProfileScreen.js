@@ -22,7 +22,9 @@ import DateTimePickerModal from "react-native-modal-datetime-picker";
 
 import Feather from "react-native-vector-icons/Feather";
 import { colors, fonts } from "../theme";
-const adresseServeur = "http://172.20.10.2:3000";
+const adresseServeur = process.env.EXPO_PUBLIC_SERVER;
+
+//Screen permettant de compléter son profil utilisateur une fois le mail et le mdp enregistré
 
 export default function CreateProfileScreen({ navigation }) {
   const user = useSelector((state) => state.user.value);

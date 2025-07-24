@@ -16,7 +16,9 @@ import { removePhoto } from "../reducers/photo";
 import * as Location from "expo-location";
 import { colors, fonts } from "../theme";
 import Feather from "react-native-vector-icons/Feather";
-const adresseServeur = "http://172.20.10.2:3000";
+const adresseServeur = process.env.EXPO_PUBLIC_SERVER;
+
+//Screen de création d'un don
 
 export default function CreateDonationScreen({ navigation }) {
   const dispatch = useDispatch();

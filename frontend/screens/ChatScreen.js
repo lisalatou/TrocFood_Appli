@@ -14,7 +14,7 @@ import Feather from "react-native-vector-icons/Feather";
 import Pusher from "pusher-js";
 import { colors, fonts } from "../theme";
 
-const adresseServeur = "http://172.20.10.2:3000";
+const adresseServeur = process.env.EXPO_PUBLIC_SERVER;
 
 // Screen du chat en temps réel avec Pusher(service de messagerie en temps réel).
 

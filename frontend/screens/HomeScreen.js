@@ -14,7 +14,9 @@ import DonCard from "../components/DonCard";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleFavorite } from "../reducers/favorites";
 import * as Location from "expo-location";
-const adresseServeur = "http://172.20.10.2:3000";
+const adresseServeur = process.env.EXPO_PUBLIC_SERVER;
+
+//Screen page d'accueil : affiche l'ensemble des dons
 
 export default function HomeScreen({ navigation }) {
   const dispatch = useDispatch();

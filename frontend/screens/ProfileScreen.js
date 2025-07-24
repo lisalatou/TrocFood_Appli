@@ -11,6 +11,8 @@ import Feather from "react-native-vector-icons/Feather";
 import { colors, fonts } from "../theme";
 import { useSelector } from "react-redux";
 
+//Screen du profil de l'utilisateur
+
 export default function ProfileScreen({ navigation }) {
   const user = useSelector((state) => state.user?.value);
   const favorites = useSelector((state) => state.favorites?.value || []);

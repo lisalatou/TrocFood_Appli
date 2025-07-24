@@ -10,7 +10,9 @@ import { useSelector, useDispatch } from "react-redux";
 import { toggleFavorite } from "../reducers/favorites";
 import { colors, fonts } from "../theme";
 import DonCard from "../components/DonCard";
-const adresseServeur = "http://172.20.10.2:3000";
+const adresseServeur = process.env.EXPO_PUBLIC_SERVER;
+
+//Screen affichant les favoris d'un utilisateur
 
 export default function FavoritesScreen({ navigation }) {
   const favorites = useSelector((state) => state.favorites.value); // Liste des favoris

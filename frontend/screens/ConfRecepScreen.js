@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { colors, fonts } from "../theme";
-const adresseServeur = "http://172.20.10.2:3000";
+const adresseServeur = process.env.EXPO_PUBLIC_SERVER;
 
 // Screen pour confirmer la réception d'un don et lors de la confirmation,
 // supprimer le don de la base de données.
