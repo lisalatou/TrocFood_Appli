@@ -40,20 +40,22 @@ Troc'Food est une application mobile de partage et de réservation de dons alime
 
 ## 🗂️ Structure du projet
 
+```text
 Troc'Food_Appli/
 ├── backend/
-│ ├── models/ # Schémas Mongoose (User, Don, Message, etc.)
-│ ├── routes/ # Routes Express (users, dons, chat, favorites)
-│ ├── modules/ # Fonctions utilitaires (validation, etc.)
-│ ├── app.js # Point d’entrée serveur
-│ └── .env # Variables d’environnement backend
+│   ├── models/         # Schémas Mongoose (User, Don, Message, etc.)
+│   ├── routes/         # Routes Express (users, dons, chat, favorites)
+│   ├── modules/        # Fonctions utilitaires (validation, etc.)
+│   ├── app.js          # Point d’entrée serveur
+│   └── .env            # Variables d’environnement backend
 └── frontend/
-├── components/ # Composants réutilisables (DonCard, etc.)
-├── reducers/ # Redux slices
-├── screens/ # Écrans principaux (Home, Chat, Profile, etc.)
-├── assets/ # Images et icônes
-├── App.js # Navigation principale
-└── .env.local # Variables d’environnement frontend
+    ├── components/     # Composants réutilisables (DonCard, etc.)
+    ├── reducers/       # Redux slices
+    ├── screens/        # Écrans principaux (Home, Chat, Profile, etc.)
+    ├── assets/         # Images et icônes
+    ├── App.js          # Navigation principale
+    └── .env.local      # Variables d’environnement frontend
+```
 
 ## 🔒 Sécurité & bonnes pratiques
 
