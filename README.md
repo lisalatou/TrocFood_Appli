@@ -2,6 +2,12 @@
 
 Troc'Food est une application mobile de partage et de réservation de dons alimentaires entre particuliers. Elle vise à lutter contre le gaspillage alimentaire en facilitant la mise en relation entre donneurs et bénéficiaires.
 
+<div align="center">
+  <img src="docs/screenshots/login.jpg" alt="Login" width="250" style="margin: 10px"/>
+  <img src="docs/screenshots/accueil.jpg" alt="Accueil" width="250" style="margin: 10px"/>
+  <img src="docs/screenshots/profil.jpg" alt="Profil" width="250" style="margin: 10px"/>
+</div>
+
 ## 🚀 Stack Technique
 
 ### Frontend (Mobile)
